@@ -1,22 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
-
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+    <div class="product-page">
+        <div class="product-images">
+            <img id="main-image" src="main-image.jpg" alt="Product Image">
+            <div class="thumbnail-images">
+                <img src="thumb1.jpg" alt="Thumbnail 1">
+                <img src="thumb2.jpg" alt="Thumbnail 2">
+                <img src="thumb3.jpg" alt="Thumbnail 3">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1 id="product-title">Product Title</h1>
+            <p id="product-vendor">Vendor Name</p>
+            <p id="product-price">$99.99</p>
+            <p id="compare-price">$149.99</p>
+            <p id="percentage-off">33% off</p>
+            <div class="color-selector">
+                <label for="color">Color:</label>
+                <select id="color">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <div class="size-selector">
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                </select>
+            </div>
+            <div class="quantity-selector">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+            <button id="add-to-cart">Add to Cart</button>
+            <p id="description">This is the product description.</p>
+        </div>
     </div>
-    <!-- Happy coding 😊 -->
-    <script src="./script.js"></script>
+    <script src="scripts.js"></script>
 </body>
-
 </html>
